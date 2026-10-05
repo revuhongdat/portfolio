@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Git Pull Latest Source
         run: |
-          # Vị trí thư mục source code trên VPS Ubuntu 
-          cd ~/projects/portfolio
+          # Vị trí thư mục source code chuẩn Production (Nginx) trên VPS
+          cd /var/www/portfolio
           
           # Hoàn tác bất kỳ thay đổi file tạm nào (nếu có) và kéo code mới nhất về
           git reset --hard HEAD

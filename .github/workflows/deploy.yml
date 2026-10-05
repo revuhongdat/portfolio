@@ -1,0 +1,23 @@
+name: Auto Deploy to Homelab VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    # Chọn môi trường tự host trên máy ảo Ubuntu (Homelab) của bạn
+    runs-on: self-hosted
+
+    steps:
+      - name: Git Pull Latest Source
+        run: |
+          # Vị trí thư mục source code trên VPS Ubuntu 
+          cd ~/projects/portfolio
+          
+          # Hoàn tác bất kỳ thay đổi file tạm nào (nếu có) và kéo code mới nhất về
+          git reset --hard HEAD
+          git pull origin main
+          
+          echo "✅ Deploy CV thành công lên Homelab!"

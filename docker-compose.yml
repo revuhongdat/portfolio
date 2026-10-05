@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  cv-web:
+    image: nginx:alpine
+    container_name: cv-webapp-nginx
+    restart: always
+    # Trỏ cổng 80 của máy áo Ubuntu thẳng vào Container
+    ports:
+      - "80:80"
+    volumes:
+      # Liên kết trực tiếp thư mục chứa code hiện tại vào lõi phục vụ của Nginx
+      - ./:/usr/share/nginx/html

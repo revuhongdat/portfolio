@@ -110,13 +110,22 @@
                     <code>
                         <span class="keyword">class</span> <span class="class-name">DevProfile</span>(<span class="class-name">models.Model</span>):<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;_name = <span class="string">'vu.hong.dat'</span><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;tech_stack = fields.List([<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'Odoo / Python'</span>,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'Java Spring Boot'</span>,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'React Native / NextJS'</span><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;])<br><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span> <span class="class-name">action_deploy</span>(<span class="keyword">self</span>):<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">'Hiệu suất cao - Dễ bảo trì!'</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;_description = <span class="string">'Odoo & Backend Developer'</span><br><br>
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;exp_years = fields.Float(string=<span class="string">'Kinh nghiệm'</span>, default=3.0)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;core_stack = fields.Selection([<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="string">'odoo'</span>, <span class="string">'Python / Odoo ERP'</span>),<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="string">'java'</span>, <span class="string">'Spring Boot API'</span>),<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="string">'mobile'</span>, <span class="string">'React Native / JS'</span>)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;])<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;team_player = fields.Boolean(default=True)<br><br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span> <span class="class-name">action_optimize</span>(<span class="keyword">self</span>):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">self</span>.ensure_one()<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'status'</span>: <span class="string">'Success'</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'message'</span>: <span class="string">'Clean code, siêu tối ưu!'</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
                     </code>
                 </div>
             </div>

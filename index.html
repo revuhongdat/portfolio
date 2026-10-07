@@ -87,11 +87,12 @@
     <!-- Header Section -->
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1 class="fade-up-1">Liên kết quy trình - tối ưu nền tảng <span class="text-gradient">Backend & ERP</span>
+            <h1 class="fade-up-1">Kiến tạo giải pháp - chuyên gia nền tảng <span class="text-gradient">Odoo ERP</span>
             </h1>
-            <p class="fade-up-2">Xin chào, tôi là <strong>Vũ Hồng Đạt</strong> - Odoo developer cùng tư duy hệ thống và
-                luồng dữ liệu mạnh mẽ. Sở hữu chuyên môn vững trên nền tảng Odoo ERP
-                (3 năm) kết hợp cùng hệ sinh thái API (Java Spring Boot) và Mobile App (React Native).</p>
+            <p class="fade-up-2">Xin chào, tôi là <strong>Vũ Hồng Đạt</strong> - Odoo Backend Developer. Sở hữu 3 năm
+                kinh nghiệm
+                chuyên sâu cấu trúc, tùy chỉnh và phát triển module Odoo.
+                Triển khai tích hợp các luồng dữ liệu hệ thống hiệu suất cao, mang lại giải pháp ERP toàn diện.</p>
             <div class="hero-actions fade-up-3">
                 <a href="#projects" class="btn primary-btn">Xem Dự Án</a>
                 <a href="#contact" class="btn secondary-btn">Liên Hệ Với Tôi</a>
@@ -110,13 +111,13 @@
                     <code>
                         <span class="keyword">class</span> <span class="class-name">DevProfile</span>(<span class="class-name">models.Model</span>):<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;_name = <span class="string">'vu.hong.dat'</span><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;_description = <span class="string">'Odoo & Backend Developer'</span><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;_description = <span class="string">'Senior Odoo Developer'</span><br><br>
                         
                         &nbsp;&nbsp;&nbsp;&nbsp;exp_years = fields.Float(string=<span class="string">'Kinh nghiệm'</span>, default=3.0)<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;core_stack = fields.Selection([<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="string">'odoo'</span>, <span class="string">'Python / Odoo ERP'</span>),<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="string">'java'</span>, <span class="string">'Spring Boot API'</span>),<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="string">'mobile'</span>, <span class="string">'React Native / JS'</span>)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="string">'backend'</span>, <span class="string">'Odoo ORM & Core Module'</span>),<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="string">'api'</span>, <span class="string">'Odoo Integration API'</span>),<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="string">'plus'</span>, <span class="string">'Java / UI React (Bonus)'</span>)<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;])<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;team_player = fields.Boolean(default=True)<br><br>
 
@@ -135,33 +136,39 @@
     <!-- Skills Section -->
     <section id="skills" class="skills-section section-padding">
         <div class="section-heading">
-            <h2 class="reveal-text">Kho Vũ Khí Công Nghệ</h2>
-            <p>Hệ sinh thái công nghệ linh hoạt từ Core Data đến Frontend.</p>
+            <h2 class="reveal-text">Kỹ Năng & Chuyên Môn</h2>
+            <p>Tập trung chuyên sâu về cấu trúc hệ thống Odoo ERP, kiến trúc nghiệp vụ tích hợp hệ thống, cùng các kỹ
+                năng kỹ thuật mở rộng.</p>
         </div>
         <div class="skills-grid">
             <div class="skill-card fade-in">
                 <div class="skill-icon python-icon">🐍</div>
-                <h3>Python / Odoo ERP</h3>
-                <p>Nắm vững kiến trúc MVC, bảo mật ACL/Record Rules. Thành thạo Model Inheritance, cron jobs tự động và
-                    xử lý Data Migration quy mô lớn.</p>
+                <h3>Odoo Framework & Unit Test</h3>
+                <p>Thành thạo ORM, Model Inheritance, hệ thống View (XML, QWeb). Tùy biến sâu các core module
+                    (Inventory, Sales, HR...). Chú trọng viết <strong>Unit Test (TransactionCase, Mocking)</strong> đảm
+                    bảo tính toàn vẹn hệ thống trước khi deploy.</p>
             </div>
             <div class="skill-card fade-in" style="transition-delay: 100ms;">
-                <div class="skill-icon db-icon">☕</div>
-                <h3>Java & Frontend/Mobile</h3>
-                <p>Nền tảng Core Java/Spring Boot tốt. Trực tiếp tham gia dựng UI web (ReactJS, NextJS) và phát triển di
-                    động đa nền tảng (React Native).</p>
+                <div class="skill-icon">🛡️</div>
+                <h3>Odoo Security & Performance</h3>
+                <p>Kiểm soát phân quyền chặt chẽ với ACLs và Record Rules ở môi trường Multi-company. Tối ưu SQL/ORM
+                    query, điều kiện Domain filter để tăng tốc các Action View và khắc phục lỗi Timeout.</p>
             </div>
             <div class="skill-card fade-in" style="transition-delay: 200ms;">
                 <div class="skill-icon odoo-icon">🔗</div>
-                <h3>Thiết kế API Tích Hợp</h3>
-                <p>Cấu trúc các endpoint REST/JSON độ trễ thấp tối ưu cho ứng dụng Mobile. Sử dụng Webhook để đồng bộ
-                    đơn hàng hai chiều (vd: Pancake, Zalo OA).</p>
+                <h3>Tích Hợp & Chuyển Đổi Số Dữ Liệu</h3>
+                <p>Xây dựng JSON-RPC, Webhooks tích hợp luồng dữ liệu hai chiều. Quản lý quy trình chuyển đổi số: chuẩn
+                    hóa schema, xử lý <strong>Import Data</strong> tốc độ cao và triển khai <strong>Data
+                        Migration</strong> an toàn quy mô lớn khi Go-live.</p>
             </div>
             <div class="skill-card fade-in" style="transition-delay: 300ms;">
-                <div class="skill-icon js-icon">🐘</div>
-                <h3>PostgreSQL & DB</h3>
-                <p>Khả năng tổ chức thiết kế CSDL (PostgreSQL, MySQL), viết query có tính tối ưu cao (Domain query) giải
-                    nén hiệu suất các trang view phức tạp.</p>
+                <div class="skill-icon js-icon">➕</div>
+                <h3>Điểm Cộng (Plus Points)</h3>
+                <p><strong>DB:</strong> PostgreSQL (tối ưu query nâng cao).<br>
+                    <strong>Java:</strong> Có nền tảng tư duy tốt qua các dự án Spring Boot API.<br>
+                    <strong>Frontend/Mobile:</strong> Hiểu biết ReactJS, React Native để tương tác trơn tru với team
+                    Client.
+                </p>
             </div>
         </div>
     </section>
@@ -198,19 +205,8 @@
                         dữ liệu toàn diện bổ trợ trực tiếp cho nghề Odoo Developer hiện tại.</li>
                 </ul>
             </div>
-
             <div class="exp-card fade-in" style="transition-delay: 200ms;">
-                <div class="exp-company">Công ty CP Codegym Việt Nam</div>
-                <div class="exp-role">Java Fullstack Developer | 06/2023 – 01/2024</div>
-                <ul>
-                    <li>Tham gia Agile team làm dự án QUIZIZZ nội bộ. Dựng Database cấu trúc đề trắc nghiệm SQL.</li>
-                    <li>Tạo Controller API Java xử lý luồng tính điểm, gửi mail điểm thi trên backend Spring Framework.
-                        Mặt frontend ReactJS UI.</li>
-                </ul>
-            </div>
-
-            <div class="exp-card fade-in" style="transition-delay: 300ms;">
-                <div class="exp-company">Lĩnh vực Kỹ Thuật (Tiền đề Lập trình)</div>
+                <div class="exp-company">Lĩnh vực Kỹ Thuật</div>
                 <div class="exp-role">Công ty TNHH Denso VN · Bách Khoa HN | 09/2014 – 06/2023</div>
                 <ul>
                     <li>Kỹ sư cơ khí chế tạo máy tại ĐH Bách Khoa Hà Nội. Gần 4 năm kỹ sư cơ khí làm việc tại tập đoàn
@@ -259,7 +255,8 @@
                 <div class="project-info">
                     <span class="badge">Spring Boot | NextJS | RN</span>
                     <h3>Cổng Đăng Ký Hiến Tạng (Vnhot)</h3>
-                    <p>Website và Ứng dụng điện thoại đồng bộ hóa xử lý hệ sinh thái cho phép user đăng nhập, nộp đơn
+                    <p>Dự án fullstack điểm cộng bổ trợ (Plus point); website và ứng dụng điện thoại đồng bộ cho phép
+                        user nộp đơn
                         thành mạch logic chặt chẽ.</p>
                 </div>
             </div>
@@ -277,14 +274,13 @@
                     (Email)</a>
                 <a href="https://github.com/revuhongdat" target="_blank" class="contact-btn outline"><span
                         class="icon">💻</span> GitHub</a>
-                <a href="tel:0356228660" class="contact-btn outline"><span class="icon">�</span> 0356 228 660</a>
+                <a href="tel:0356228660" class="contact-btn outline"><span class="icon"></span> 0356 228 660</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; <span id="year"></span> Vũ Hồng Đạt - Sự Kỷ Luật Của Kỹ Sư Cơ Khí, Tư Duy Phân Tích Của Lập Trình
-            Viên.</p>
+        <p>&copy; <span id="year"></span> Vũ Hồng Đạt </p>
     </footer>
 
     <script src="script.js"></script>
